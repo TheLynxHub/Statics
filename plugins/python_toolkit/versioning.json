@@ -1,6 +1,15 @@
 {
   "versions": [
     {
+      "version": "0.15.8",
+      "commit": "ffffcd7",
+      "engines": {
+        "extensionApi": "^2.2.0"
+      },
+      "stage": "early_access",
+      "platforms": ["win32", "linux", "darwin"]
+    },
+    {
       "version": "0.15.7",
       "commit": "b8937fc",
       "engines": {
@@ -119,6 +128,15 @@
     }
   ],
   "changes": [
+    {
+      "version": "0.15.8",
+      "date": "2026-10-12",
+      "items": [
+        {
+          "⚡ Improvements": ["Added audio.cpp Webui support."]
+        }
+      ]
+    },
     {
       "version": "0.15.7",
       "date": "2026-08-30",
