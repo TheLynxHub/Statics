@@ -3,11 +3,72 @@
   "currentBuild": 67,
   "releaseDate": "2026-10-09",
   "earlyAccess": {
-    "version": "3.6.1",
-    "build": 67,
-    "releaseDate": "2026-09-06"
+    "version": "3.6.2",
+    "build": 68,
+    "releaseDate": "2026-10-20"
   },
   "changeLog": [
+    {
+      "build": 68,
+      "version": "3.6.2",
+      "changes": [
+        {
+          "title": "✨ New Features",
+          "items": [
+            {
+              "label": "Loading Screen Visuals & Animations",
+              "subitems": [
+                {
+                  "label": "Added 15 new loading animations and WebGL visual effects."
+                },
+                {
+                  "label": "Refreshed existing loading animations with modernized color palettes, updated layouts, and smoother rendering."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "⚡ Improvements",
+          "items": [
+            {
+              "label": "Updated Chromium from v150 to v152."
+            },
+            {
+              "label": "Optimized application packaging and file exclusions."
+            },
+            {
+              "label": "Added a badge counter to the 'Sync All' button in the Plugins manager showing the total number of plugins available to sync."
+            }
+          ]
+        },
+        {
+          "title": "🐛 Bug Fixes",
+          "items": [
+            {
+              "label": "Fixed a startup crash caused by missing or uninitialized hotkey configurations ('hotkeys is not iterable'), and added automatic restoration of default hotkeys."
+            },
+            {
+              "label": "Fixed an application crash occurring when resizing or switching tabs while a terminal process is terminating or already closed."
+            },
+            {
+              "label": "Fixed an issue on the dashboard account profile page where attempting to sync could falsely report being offline despite an active internet connection."
+            },
+            {
+              "label": "Fixed remote image copying to the system clipboard by migrating to the asynchronous clipboard API with proper image validation."
+            }
+          ]
+        },
+        {
+          "title": "📌 Minor Changes",
+          "items": [
+            {
+              "label": "Refreshed interface icons and visual styling across the Plugins manager, including the changelog tab icon, header controls, and avatar layout."
+            }
+          ]
+        }
+      ]
+    },
     {
       "build": 67,
       "version": "3.6.1",
