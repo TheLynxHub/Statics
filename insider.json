@@ -1,8 +1,192 @@
 {
-  "currentVersion": "3.6.1",
-  "currentBuild": 67,
-  "releaseDate": "2026-09-06",
+  "currentVersion": "3.7.0",
+  "currentBuild": 77,
+  "releaseDate": "2026-11-14",
   "changeLog": [
+    {
+      "build": 77,
+      "version": "3.7.0",
+      "changes": [
+        {
+          "title": "✨ New Features",
+          "items": [
+            {
+              "label": "Full Multilingual Localization (35+ Languages)",
+              "subitems": [
+                {
+                  "label": "Fully localized LynxHub core app, settings, dialogs, and menus with support for 37 languages including English, Persian, Arabic, Spanish, French, German, Japanese, Chinese, and many more."
+                },
+                {
+                  "label": "Complete Right-to-Left (RTL) layout support tailored for Persian, Arabic, Hebrew, and Urdu."
+                },
+                {
+                  "label": "Switch languages on the fly from **Settings > General > Language**."
+                }
+              ]
+            },
+            {
+              "label": "Window-Wide Drag & Drop Support",
+              "subitems": [
+                {
+                  "label": "Drag and drop files or folders directly into LynxHub from your operating system."
+                },
+                {
+                  "label": "Automatically routes files to new or existing browser tabs (HTML, images, audio, video, PDF) or terminal tabs with relevant execution commands."
+                },
+                {
+                  "label": "Automatically resolves `.lnk` shortcuts and native file path drops."
+                }
+              ]
+            },
+            {
+              "label": "Terminal Shell Integration & Command Tracking",
+              "subitems": [
+                {
+                  "label": "Injects shell integration scripts for PowerShell, Bash, and Zsh to track command execution, exit codes, and duration."
+                },
+                {
+                  "label": "Added **Command Gutter Status Indicators** showing success/failure dots beside commands, with an interactive popover to inspect status, duration, copy isolated output, or rerun commands."
+                },
+                {
+                  "label": "Added **Execution Timer** showing live and finished command runtimes in the session top bar."
+                },
+                {
+                  "label": "Added shortcuts and top bar controls to jump between previous/next commands and select command output."
+                },
+                {
+                  "label": "Dynamically synchronizes shell current working directory (CWD) to the interface."
+                }
+              ]
+            },
+            {
+              "label": "Terminal Sticky Scroll",
+              "subitems": [
+                {
+                  "label": "Keeps the active command header pinned to the top of the terminal while scrolling through long output."
+                },
+                {
+                  "label": "Can be toggled on or off in **Settings > Terminal**."
+                }
+              ]
+            },
+            {
+              "label": "Terminal Line Numbers Gutter",
+              "subitems": [
+                {
+                  "label": "Added an optional left gutter displaying terminal line numbers, with automatic offset tracking on clear and scrollback."
+                },
+                {
+                  "label": "Configurable in **Settings > Terminal**."
+                }
+              ]
+            },
+            {
+              "label": "Terminal Rich Path Linkifier & Link Tooltips",
+              "subitems": [
+                {
+                  "label": "Terminal paths and URLs are now clickable links with working directory resolution to quickly open existing files or folders in your default applications."
+                },
+                {
+                  "label": "Added rich link hover tooltips showing path destinations and click actions."
+                }
+              ]
+            },
+            {
+              "label": "Terminal Stickers & Regex Highlighters",
+              "subitems": [
+                {
+                  "label": "Add visual sticker badges, labels, and custom regex color highlights to terminal outputs."
+                },
+                {
+                  "label": "Easily manage stickers from the terminal top bar or **Settings > Terminal**."
+                }
+              ]
+            },
+            {
+              "label": "Terminal Modern Scrollbar Styling",
+              "subitems": [
+                {
+                  "label": "Added sleek modern scrollbars with customizable theme (Default or Modern) in **Settings > Terminal**."
+                }
+              ]
+            },
+            {
+              "label": "Terminal Overview Ruler Search Highlights",
+              "subitems": [
+                {
+                  "label": "Terminal search matches and active results are now highlighted directly in the scrollbar overview ruler."
+                }
+              ]
+            },
+            {
+              "label": "Card Modular Actions Menu",
+              "subitems": [
+                {
+                  "label": "Module cards can now provide custom action buttons, submenus, and quick shortcuts directly inside their card menus."
+                }
+              ]
+            },
+            {
+              "label": "New Tab Open Behavior Setting",
+              "subitems": [
+                {
+                  "label": "Choose whether opening new tabs automatically focuses and activates the tab or opens it quietly in the background (**Settings > General > Tabs**)."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "⚡ Improvements",
+          "items": [
+            {
+              "label": "Updated Chromium from `152.0.7977.167` to `156.0.8078.96`"
+            },
+            {
+              "label": "Optimized browser data and credential storage operations to prevent UI freezing during encryption/decryption."
+            },
+            {
+              "label": "Copying text in the terminal now attaches rich HTML formatting alongside plain text to preserve colors and styles when pasting into other apps."
+            },
+            {
+              "label": "Native OS clipboard files are now automatically decoded and pasted as quoted path strings into the terminal."
+            },
+            {
+              "label": "Added a pause-after-exit setting when terminal commands finish with a non-zero exit code."
+            },
+            {
+              "label": "Added terminal flow control watermarks and IPC output batching to maintain smooth UI responsiveness during massive command outputs."
+            },
+            {
+              "label": "Improved focus reliability and keyboard navigation in warning dialogs, confirmation prompts, and alert windows."
+            },
+            {
+              "label": "Automatically synchronizes terminal font loading using native font loading APIs to prevent font fallback glitches on launch."
+            }
+          ]
+        },
+        {
+          "title": "🐛 Bug Fixes",
+          "items": [
+            {
+              "label": "Fixed text clipping on Persian and Arabic font descenders in bookmark menus and tooltips."
+            },
+            {
+              "label": "Fixed an issue where opening modals could leave navigation elements unintentionally disabled."
+            },
+            {
+              "label": "Prevented false \"Force Reload\" warning prompts from triggering when closing or terminating browser tabs."
+            },
+            {
+              "label": "Fixed scrollback line offset tracking and line number calculation after clearing the terminal screen."
+            },
+            {
+              "label": "Fixed terminal crash caused by false scrollback eviction during initial launch or screen redraws."
+            }
+          ]
+        }
+      ]
+    },
     {
       "build": 67,
       "version": "3.6.1",
